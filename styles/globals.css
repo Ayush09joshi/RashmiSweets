@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    /* To disable side scrolling in the page */
+    overflow-x: hidden;
+}
