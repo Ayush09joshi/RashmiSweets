@@ -27,7 +27,7 @@ const Navbar = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
       </div>
 
       <div className='nav mb-1.5'>
-        <ul className='flex md:ml-6 space-x-5 font-bold md:text-md'>
+        <ul className='flex md:ml-6 space-x-10 font-bold md:text-lg '>
           <Link href={"/sweets"}><li>Sweets</li></Link>
           <Link href={"/cakes"}><li>Cakes</li></Link>
           <Link href={"/giftboxes"}><li>Gift Boxes</li></Link>

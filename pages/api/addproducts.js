@@ -10,15 +10,16 @@ const handler = async (req, res) => {
                 desc: req.body[i].desc,
                 img: req.body[i].img,
                 category: req.body[i].category,
+                size: req.body[i].size,
                 price: req.body[i].price,
                 availableQty: req.body[i].availableQty
             })
             await p.save();
         }
-        res.status(200).json({success : "success"})
+        res.status(200).json({ success: "success" })
     }
     else {
-        res.status(400).json({error : "This method is not allowed"})
+        res.status(400).json({ error: "This method is not allowed" })
     }
 }
 export default connectDb(handler)
